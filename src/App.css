@@ -14,3 +14,7 @@
 .problem-prompt {
   margin-bottom: 5%;
 }
+
+.answer-button {
+  float: right;
+}

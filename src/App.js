@@ -110,41 +110,43 @@ class App extends Component {
           </strong>
         </Row>
         <Row>
-          <InputGroup>
-            <InputGroup.Prepend>
-              <InputGroup.Text>Enter Numbers Here:</InputGroup.Text>
-            </InputGroup.Prepend>
-            <Form.Control
-              type="text"
-              value={this.state.number1}
-              onChange={this.handleNumberChange}
-              name="number1"
-              placeholder="Number 1"
-            />
-            <Form.Control
-              type="text"
-              value={this.state.number2}
-              onChange={this.handleNumberChange}
-              name="number2"
-              placeholder="Number 2"
-            />
-            <Form.Control
-              type="text"
-              value={this.state.number3}
-              onChange={this.handleNumberChange}
-              name="number3"
-              placeholder="Number 3"
-            />
-            <InputGroup.Append>
-              <Button
-                variant="dark"
-                onClick={this.handleCheckNumbers}
-                disabled={this.getDisableCheckButton()}
-              >
-                Check Happy Number
-              </Button>
-            </InputGroup.Append>
-          </InputGroup>
+          <Col>
+            <InputGroup>
+              <InputGroup.Prepend>
+                <InputGroup.Text>Enter Numbers Here:</InputGroup.Text>
+              </InputGroup.Prepend>
+              <Form.Control
+                type="text"
+                value={this.state.number1}
+                onChange={this.handleNumberChange}
+                name="number1"
+                placeholder="Number 1"
+              />
+              <Form.Control
+                type="text"
+                value={this.state.number2}
+                onChange={this.handleNumberChange}
+                name="number2"
+                placeholder="Number 2"
+              />
+              <Form.Control
+                type="text"
+                value={this.state.number3}
+                onChange={this.handleNumberChange}
+                name="number3"
+                placeholder="Number 3"
+              />
+              <InputGroup.Append>
+                <Button
+                  variant="dark"
+                  onClick={this.handleCheckNumbers}
+                  disabled={this.getDisableCheckButton()}
+                >
+                  Check Happy Number
+                </Button>
+              </InputGroup.Append>
+            </InputGroup>
+          </Col>
         </Row>
 
         {this.state.message && (
